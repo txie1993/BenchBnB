@@ -10,7 +10,8 @@ class SessionForm extends React.Component {
       this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  componentDidMount() {
+  componentDidUpdate() {
+    console.log(this.state);
     this.ensureNoLogin();
   }
 
